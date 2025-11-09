@@ -1,21 +1,17 @@
-import React from 'react';
-import Topbar from '../Layout/Topbar';
-import Navbar  from './Navbar';
+import React from 'react'
+import Topbar from '../Layout/Topbar'
+import Navbar from './Navbar'
 
-const Header = () => {
+const Header = ({ onCartOpen }) => {
   return (
-    <header className='border-b border-gray-200'>
+    <header className="border-b border-gray-200">
       {/* Topbar */}
-      <Topbar/>
+      <Topbar />
 
-      {/* navbar */}
-      <Navbar/>
-
-      {/* Cart Drawer */}
+      {/* Navbar */}
+      <Navbar onCartOpen={onCartOpen} />
     </header>
   )
-    
-  
-};
+}
 
-export default Header;
+export default Header
