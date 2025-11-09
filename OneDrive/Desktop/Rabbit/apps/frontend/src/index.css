@@ -4,12 +4,19 @@
   font-weight: 400;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 #root {
@@ -17,4 +24,10 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+@media (forced-colors: active) {
+  body {
+    forced-color-adjust: auto;
+  }
 }

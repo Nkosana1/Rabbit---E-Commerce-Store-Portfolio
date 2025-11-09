@@ -10,6 +10,10 @@ const CartDrawer = ({ isOpen, onClose }) => {
         className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 ${
           isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
+        style={{
+          backdropFilter: 'blur(2px)',
+          WebkitBackdropFilter: 'blur(2px)',
+        }}
         onClick={onClose}
         aria-hidden={!isOpen}
       />
